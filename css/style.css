@@ -1,112 +1,214 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
-    background-color: #edcdc6;
-    padding: 0;
-    margin: 0;
-    min-width: auto;
+  font-family: "Roboto", sans-serif;
 }
 
-.background {
-    height: 100%;
-    width: 100%;
-    margin: 0;
-}
-
-.container {
-    width: 50%;
-    margin: 0 auto;
-}
-
-.header {
-    top: 0;
-    position: absolute;
-    width: 100%;
-    height: 50px;
-    background-color: #cedde1;   
-}
-
-.main {
-    background-color: #ffe7e7;
-    width: 50%;
-    height: 100%;
-    position: absolute;
-    margin-top: 50px;
-    margin-bottom: 170px;
-    margin-right: auto;
-    margin-left: auto;
-}
-
-.footer {
-    position: absolute;
-    bottom: 0px;
-    background-color: #7d7d7d;
-    max-height: 175px;
-    height: 100%;
-    width: 100%;
-    padding: 0;
-    border: 0;
-    margin: 0;
-}
-
-.copyright {
-    position: absolute;
-    bottom: 0;
-    margin: 0 auto;
-}
-
-.photoElement {
-    background-color: white;
-    height: 194;
-    width: 194;
-    object-fit: cover;
-    /* object-position: 0 0; */
-}
-
-.cinf {
-    /* text-align: center; */
-    display: flex;
-    flex-flow: row wrap;
-    margin: 0 auto;
-    /* max-width: 1264px; */
-    /* max-height: 300px; */
-    width: 60%;
-    padding: 32px 12px 12px 12px;
-    font-family: 'Roboto', sans-serif;
-}
-
-.cinf > p{
-    text-align: center;
-}
-
-.copyright {
-    text-align: center;
-    margin-bottom: 7px;
+a {
+  text-decoration: none;
 }
 
 li {
-    display: list-item;
+  list-style: none;
+  display: inline-block;
 }
 
-ul {
-
+.logo {
+  background: #a7dcf6;
+  width: 100%;
+  display: flex;
+  /* justify-content: center; */
 }
 
-.contacts {
+.logo .container-logo {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.imglogo {
+  padding: 5px;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+nav {
+  margin: auto;
+  width: 100%;
+  height: 50px;
+  text-align: center;
+  border-bottom: black 2px solid;
+  /* box-shadow: 5px rgba(100, 100, 100); */
+}
+
+.topnav {
+  background-color: #fff;
+  font-size: 14px;
+  margin-top: 40px;
+}
+
+.topnav a {
+  color: #000;
+  text-align: center;
+  padding: 14px 16px;
+  font-size: 15px;
+  height: 100%;
+}
+
+.topnav a:hover {
+  border-bottom: 18px solid #f6c1a7;
+  border-top: 26px solid #f6c1a7;
+  background-color: #F6C1A7;
+  color: white;
+}
+
+.topnav .menuicon {
+  display: none;
+  /* float: right; */
+}
+
+.topnav .menuicon:hover {
+  border-bottom: none;
+  border-right: none;
+}
+
+body .container {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.mainbackground {
+    height: 100vh;
+    background-image: url('../assets/img/out/bg1.png');
+    background-size: cover;
+    background-position: center;
+    /* position: fixed; */
+}
+
+.photogrid {
     position: absolute;
-    right: 30%;
+    right: 5%;
+    padding-top: 50px;
 }
 
-/* #continfo {
-    text-align: left;
-    right: 30%;
-    position: absolute;
-} */
-
-#ph1 {
-    background-image: url("../assets/img/out/ph1.jpeg");
+.photoElement {
+    box-sizing: border-box;
     width: 194px;
     height: 194px;
+    background-size: cover;
+    float: left;
+    margin: 3%;
+    border-radius: 5%;
 }
 
-#fcontents {
-    list-style: none;
+.description {
+    font-family: 'Roboto Slab', serif;
+    position: absolute;
+    right: 5%;
+    padding-top: 20px;
+}
+
+.description>p {
+    font-size: 20px;
+}
+
+#ph1 {
+    background-image: url('../assets/img/out/ph4.jpeg');
+    object-position: 50% 0;
+}
+#ph2 {
+    background-image: url('../assets/img/out/ph1.jpeg');
+    object-position: 50% 0;
+}
+#ph3 {
+    background-image: url('../assets/img/out/ph2.jpeg');
+    object-position: 50% 0;
+}
+#ph4 {
+    background-image: url('../assets/img/out/ph9.jpeg');
+    object-position: 50% 0;
+}
+#ph5 {
+    background-image: url('../assets/img/out/ph6.jpeg');
+    object-position: 50% 0;
+}
+#ph6 {
+    background-image: url('../assets/img/out/ph8.jpeg');
+    object-position: 50% 0;
+}
+
+.footerdiv {
+    height: 70px;
+    background: #000;
+    color: #999;
+    text-shadow: 5px #666;
+    padding: 10px;
+    text-align: center;
+}
+
+.footer-li {
+    display: block;
+
+}
+
+.footer-copyright {
+    justify-content: center;
+}
+
+/* Это нужно для определенных экранов меньше 768px */
+@media screen and (max-width: 768px) {
+  /* Это нужно для значения первого элемента, чтобы была видна кнопка ГЛАВНАЯ и рядом с ней иконка меню */
+  .topnav a:not(:first-child) {
+    display: none;
+  }
+  .topnav a.menuicon {
+    float: right;
+    margin-top: -17px;
+    display: block;
+    color: black;
+  }
+  nav {
+    width: 100%;
+    height: 100px;
+  }
+  .topnav.responsive {
+    position: relative;
+  }
+  /* Чтобы иконка отображалась справа, это для маленьких экранов */
+  .topnav.responsive a.menuicon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .topnav.responsive a:hover {
+    border-right: 4px solid #000;
+    border-bottom: 0;
+  }
+
+  .topnav.responsive a.menuicon:hover {
+      border: none;
+  }
+
+  /* переместить текст влево */
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .mainbackground {
+      background-image: none;
+  }
+  .photogrid {
+      right: 0;
+      /* text-align: center; */
+      margin: 0 auto;
+      position: relative;
+  }
+  .photoElement {
+      height: 400px;
+      width: 400px;
+  }
 }
