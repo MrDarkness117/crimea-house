@@ -20,21 +20,21 @@
     <!-- <div class="container"> -->
         <nav>
             <div class="topnav" id="tnav">
-                <a id="index" href="">ГЛАВНАЯ</a>
-                <a id="rooms" href="">КОМНАТЫ</a>
-                <a id="photos" href="">ФОТОГРАФИИ</a>
-                <a id="menu" href="#" class="menuicon">&#9776;</a>
+                <span id="index" href="">ГЛАВНАЯ</span>
+                <span id="rooms" href="">КОМНАТЫ</span>
+                <span id="photos" href="">ФОТОГРАФИИ</span>
+                <span id="menu" href="#" class="menuicon">&#9776;</span>
             </div>
         </nav>    
     <main>
         <div class="mainbackground">
-            <div class="container photogrid" id='#photogrid'>
-                <div class="photoElement" id="ph1"></div>
-                <div class="photoElement" id="ph2"></div>
-                <div class="photoElement" id="ph3"></div>
-                <div class="photoElement" id="ph4"></div>
-                <div class="photoElement" id="ph5"></div>
-                <div class="photoElement" id="ph6"></div>
+            <div class="container photogrid" id='photogrid'>
+                <div class="photoElement grid" id="ph1"></div>
+                <div class="photoElement grid" id="ph2"></div>
+                <div class="photoElement grid" id="ph3"></div>
+                <div class="photoElement grid" id="ph4"></div>
+                <div class="photoElement grid" id="ph5"></div>
+                <div class="photoElement grid" id="ph6"></div>
             </div>
             <div class="container description" id="description">
                 <h2>Приезжайте в наш дом отдыха в крыму!</h2>
@@ -51,24 +51,39 @@
                     Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
                     sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             </div>
-            <div class="rooms container" id="rooms">
+            <div class="rooms" id="roomsdiv">
                 <div class="apartments">
-                    <h3>Комната 1</h3>
-                    <p><br>Цена: <span></span> Руб/день</p>
-                    <div id="ap1a"></div>
-                    <div id="ap1b"></div>
+                    <div class="container displace">
+                        <h3>Комната 1</h3>
+                        <p>Цена: <span></span> Руб/день</p>
+                        <div id="ap1a" class="photoElement aps"></div>
+                        <div id="ap1b" class="photoElement aps"></div>
+                    </div>
                 </div>
                 <div class="apartments">
-                    <h3>Комната 2</h3>
-                    <p><br>Цена: <span></span> Руб/день</p>
-                    <div id="ap2a"></div>
-                    <div id="ap2b"></div>
+                    <div class="container displace">
+                        <h3>Комната 2</h3>
+                        <p>Цена: <span></span> Руб/день</p>
+                        <div id="ap2a" class="photoElement aps"></div>
+                    </div>
                 </div>
                 <div class="apartments">
-                    <h3>Комната 3</h3>
-                    <p><br>Цена: <span></span> Руб/день</p>
-                    <div id="ap3a"></div>
+                    <div class="container displace">
+                        <h3>Комната 3</h3>
+                        <p>Цена: <span></span> Руб/день</p>
+                        <div id="ap3a" class="photoElement aps"></div>
+                    </div>
                 </div>
+                <div class="apartments">
+                    <div class="container displace">
+                        <h3>Общая кухня</h3>
+                        <p>У нас также имеется общая кухня </p>
+                        <div id="kitchen" class="photoElement aps"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="popupbg container">
+                <div id='popup'></div>
             </div>
         </div>
     </main>
