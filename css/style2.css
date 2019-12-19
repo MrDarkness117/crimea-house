@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+html, body {
+    height: 100%;
+}
+
+span {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+    display: inline-block;
+    color: rgb(241, 155, 75);
+}
+
+#headerdiv {
+    background-color: linear-gradient(rgb(197, 223, 247), rgb(187, 219, 233));
+    height: 100px;
+    width: 100%;
+}
+
+.logo {
+    padding: 5px;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+#navdiv {
+    height: 80px;
+    width: 100%;
+    background-color: gainsboro;
+}
+
+li:hover {
+    border-bottom: 2px sold rgb(241, 155, 75);
+}
