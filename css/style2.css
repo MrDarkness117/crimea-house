@@ -11,7 +11,7 @@ html, body {
     height: 100%;
 }
 
-span {
+a {
     text-decoration: none;
 }
 
@@ -40,5 +40,8 @@ li {
 }
 
 li:hover {
-    border-bottom: 2px sold rgb(241, 155, 75);
+    border-bottom: 2px solid rgb(241, 155, 75);
+    border-top: 2px solid rgb(241, 155, 75);
 }
+
+
