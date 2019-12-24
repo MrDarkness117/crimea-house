@@ -33,6 +33,7 @@ li:hover {
 
 h1 {
     text-align: center;
+    color: white;
 }
 
 .sect {
@@ -40,11 +41,21 @@ h1 {
     width: 100%;
     height: 65vh;
     padding: 20px 0;
+    overflow: hidden;
 }
 
 .sect:nth-child(2) {
     overflow: hidden;
     color: white;
+}
+
+.sect:nth-child(3) {
+    padding: 0;
+}
+
+.sect:nth-child(4) {
+    height: auto;
+    text-align: center;
 }
 
 .headerdiv {
@@ -75,19 +86,54 @@ h1 {
     padding: 20px 0;
 }
 
-.parallax:nth-child(1) {
-    background-image: url(../assets/img/design/pic1.jpg);
+.parallax {
     background-size: cover;
     background-repeat: no-repeat;
     overflow: hidden;
+}
+
+.parallax:nth-child(1) {
+    background-image: url(../assets/img/design/pic1.jpg);
+    height: 80vh;
 }
 
 .parallax:nth-child(2) {
     height: 70vh;
 }
 
+.parallax:nth-child(3) {
+    background-image: url(../assets/img/design/pic3.jpg)
+}
+
+#hotelbg {
+    background-image: url(../assets/img/design/pic3.jpg);
+    height: 100vh;
+}
+
 .gallery .container {
-    width: 70%;
+    width: 50%;
+    overflow: hidden;
+}
+
+.photogallery {
+    margin: 0 auto;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+    height: 100%;
+    padding: 10px
+}
+
+.photoview {
+    position: absolute;
+    right: 0;
+    height: 70%;
+    width: 25%;
+    margin: 3.3%;
+    background-color: white;
+    padding: 10px 0;
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 .album {
@@ -100,6 +146,11 @@ h1 {
     background-repeat: no-repeat;
     background-color: white;
     float: left;
+    cursor: pointer;
+}
+
+.album:hover {
+    opacity: 0.7;
 }
 
 .album:nth-child(1) {
@@ -108,6 +159,34 @@ h1 {
 
 .album:nth-child(2) {
     background-image: url("../assets/img/out/ph4.jpeg");
+}
+
+.album:nth-child(3) {
+    background-image: url("../assets/img/out/ph16.jpg");
+}
+
+.album:nth-child(4) {
+    background-image: url("../assets/img/out/ph8.jpeg");
+}
+
+.album:nth-child(5) {
+    background-image: url("../assets/img/out/ph10.jpg");
+}
+
+.album:nth-child(6) {
+    background-image: url("../assets/img/out/ph12.jpg");
+}
+
+.album:nth-child(7) {
+    background-image: url("../assets/img/out/ph13.jpg");
+}
+
+.album:nth-child(8) {
+    background-image: url("../assets/img/out/ph14.jpg");
+}
+
+.album:nth-child(9) {
+    background-image: url("../assets/img/out/ph15.jpg");
 }
 
 #videobg {
@@ -124,6 +203,9 @@ h1 {
 
 @media screen and (max-width: 768px) {
     .container {
+        width: 90%;
+    }
+    .gallery .container {
         width: 90%;
     }
 }
