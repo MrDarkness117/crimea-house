@@ -49,7 +49,7 @@ h1 {
 
 .headerdiv {
     background: linear-gradient(rgb(197, 223, 247), rgb(187, 219, 233));
-    height: 100px;
+    height: 120px;
     width: 100%;
     text-align: center;
 }
@@ -86,6 +86,30 @@ h1 {
     height: 70vh;
 }
 
+.gallery .container {
+    width: 70%;
+}
+
+.album {
+    margin: 3.3%;
+    box-sizing: border-box;
+    border: 6px white solid;
+    width: 196px;
+    height: 196px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: white;
+    float: left;
+}
+
+.album:nth-child(1) {
+    background-image: url("../assets/img/out/ph9.jpeg");
+}
+
+.album:nth-child(2) {
+    background-image: url("../assets/img/out/ph4.jpeg");
+}
+
 #videobg {
     position: relative;
     /* overflow: hidden; */
@@ -95,6 +119,7 @@ h1 {
     object-fit: cover;
     width: 100%;
     height: 100%;
+    object-position: 15% 30%;
 }
 
 @media screen and (max-width: 768px) {
