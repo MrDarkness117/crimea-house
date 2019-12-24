@@ -1,4 +1,4 @@
-const parallax = document.querySelector('.parallax');
+const parallax = document.querySelectorAll('.parallax');
 
 window.addEventListener("scroll", el => {
     let offset = window.pageYOffset;
