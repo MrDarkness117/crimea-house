@@ -58,6 +58,12 @@ h1 {
     text-align: center;
 }
 
+.sect:nth-child(5) {
+    height: 75vh;
+    text-align: center;
+    overflow: hidden;
+}
+
 .headerdiv {
     background: linear-gradient(rgb(197, 223, 247), rgb(187, 219, 233));
     height: 120px;
@@ -124,7 +130,89 @@ h1 {
     padding: 10px
 }
 
-.photoview {
+
+/* The Modal (background) */
+
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    padding-top: 100px;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.9);
+    /* Black w/ opacity */
+}
+
+
+/* Modal Content (image) */
+
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+
+/* Add Animation */
+
+.modal-content,
+#caption {
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+    from {
+        -webkit-transform: scale(0)
+    }
+    to {
+        -webkit-transform: scale(1)
+    }
+}
+
+@keyframes zoom {
+    from {
+        transform: scale(0)
+    }
+    to {
+        transform: scale(1)
+    }
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+/* 100% Image Width on Smaller Screens */
+
+@media only screen and (max-width: 768px) {
+    .modal-content {
+        width: 100%;
+    }
+}
+
+
+/* .photoview {
     position: absolute;
     right: 0;
     height: 70%;
@@ -134,7 +222,7 @@ h1 {
     padding: 10px 0;
     background-repeat: no-repeat;
     background-size: contain;
-}
+} */
 
 .album {
     margin: 3.3%;
@@ -142,51 +230,16 @@ h1 {
     border: 6px white solid;
     width: 196px;
     height: 196px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-color: white;
+    object-fit: cover;
+    /* background-repeat: no-repeat; */
+    /* background-color: white; */
     float: left;
     cursor: pointer;
+    transition: 0.3s;
 }
 
 .album:hover {
     opacity: 0.7;
-}
-
-.album:nth-child(1) {
-    background-image: url("../assets/img/out/ph9.jpeg");
-}
-
-.album:nth-child(2) {
-    background-image: url("../assets/img/out/ph4.jpeg");
-}
-
-.album:nth-child(3) {
-    background-image: url("../assets/img/out/ph16.jpg");
-}
-
-.album:nth-child(4) {
-    background-image: url("../assets/img/out/ph8.jpeg");
-}
-
-.album:nth-child(5) {
-    background-image: url("../assets/img/out/ph10.jpg");
-}
-
-.album:nth-child(6) {
-    background-image: url("../assets/img/out/ph12.jpg");
-}
-
-.album:nth-child(7) {
-    background-image: url("../assets/img/out/ph13.jpg");
-}
-
-.album:nth-child(8) {
-    background-image: url("../assets/img/out/ph14.jpg");
-}
-
-.album:nth-child(9) {
-    background-image: url("../assets/img/out/ph15.jpg");
 }
 
 #videobg {
@@ -199,6 +252,13 @@ h1 {
     width: 100%;
     height: 100%;
     object-position: 15% 30%;
+}
+
+.prices {
+    display: inline-block;
+    min-width: 24%;
+    max-width: 25%;
+    overflow: hidden;
 }
 
 @media screen and (max-width: 768px) {
