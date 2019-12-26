@@ -23,7 +23,7 @@ li {
     color: rgb(241, 155, 75);
     border-top: 2px solid transparent;
     border-bottom: 2px solid transparent;
-    margin: 5px 10px;
+    margin: 0 10px;
     padding: 15px 0;
 }
 
@@ -91,7 +91,7 @@ h1 {
 }
 
 .logo {
-    padding: 5px;
+    padding: 10px 5px;
     max-width: 100%;
     height: 100%;
     box-sizing: border-box;
@@ -263,9 +263,13 @@ h1 {
     padding: 10px 0;
 }
 
+.footerdiv .container {
+    text-align: center;
+}
+
 .fblock {
     float: left;
-    width: 33%;
+    width: 43%;
     height: 100%;
     padding: 0 10px;
     font-family: "Roboto Slab", sans-serif;
