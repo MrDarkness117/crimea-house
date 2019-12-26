@@ -1,6 +1,7 @@
 const parallax = document.querySelectorAll('.parallax');
 const photogallery = document.querySelectorAll('.album');
-var photoview = document.querySelector('.photoview');
+var photowidth = photogallery[0].clientWidth;
+// var photoview = document.querySelector('.photoview');
 var modal = document.getElementById('.modal');
 var modalImg = document.getElementById('img01');
 var captionText = document.getElementById('caption');
@@ -47,6 +48,10 @@ photogallery.forEach(el => {
             // photoview.style.backgroundImage = 'url("../assets/img/out/ph15.jpg")'
         }
     })
+})
+
+photogallery.forEach(el => {
+    el.style.height = photowidth + 'px';
 })
 
 span.onclick = function() {
