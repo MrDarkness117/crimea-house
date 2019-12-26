@@ -23,7 +23,8 @@ li {
     color: rgb(241, 155, 75);
     border-top: 2px solid transparent;
     border-bottom: 2px solid transparent;
-    margin: 0 10px;
+    margin: 5px 10px;
+    padding: 15px 0;
 }
 
 li:hover {
@@ -220,7 +221,7 @@ h1 {
     margin: 3.3%;
     box-sizing: border-box;
     border: 6px white solid;
-    width: 33%;
+    width: 43%;
     object-fit: cover;
     object-position: center center;
     /* background-repeat: no-repeat; */
@@ -258,7 +259,21 @@ h1 {
 
 .footerdiv {
     background-color: whitesmoke;
-    height: 100px;
+    height: auto;
+    padding: 10px 0;
+}
+
+.fblock {
+    float: left;
+    width: 33%;
+    height: 100%;
+    padding: 0 10px;
+    font-family: "Roboto Slab", sans-serif;
+}
+
+.link {
+    height: 60px;
+    width: 60px;
 }
 
 @media screen and (max-width: 768px) {
