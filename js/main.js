@@ -1,4 +1,5 @@
 const parallax = document.querySelectorAll('.parallax');
+const video = document.querySelector('#videobg')
 const photogallery = document.querySelectorAll('.album');
 var photowidth = photogallery[0].clientWidth;
 // var photoview = document.querySelector('.photoview');
@@ -13,6 +14,8 @@ window.addEventListener("scroll", el => {
     let offset = window.pageYOffset;
     parallax.forEach(function(prllx, i) {
         prllx.style.backgroundPositionY = (offset - prllx.offsetTop) * 0.6 + "px";
+        video.style.offset = "0 " + (offset - prllx.offsetTop) * 0.6 + 'px';
+
     })
 })
 
@@ -50,9 +53,17 @@ photogallery.forEach(el => {
     })
 })
 
+
+// Resize function - initial and future window resize
 photogallery.forEach(el => {
     el.style.height = photowidth + 'px';
 })
+window.addEventListener('resize', () => {
+    photowidth = photogallery[0].clientWidth;
+    photogallery.forEach(el => {
+        el.style.height = photowidth + 'px';
+    });
+}, true);
 
 span.onclick = function() {
     modal.style.display = 'none';

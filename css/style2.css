@@ -224,11 +224,10 @@ h1 {
     width: 43%;
     object-fit: cover;
     object-position: center center;
-    /* background-repeat: no-repeat; */
-    /* background-color: white; */
     float: left;
     cursor: pointer;
     transition: 0.3s;
+    border-radius: 5%;
 }
 
 .album:hover {
